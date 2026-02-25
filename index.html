@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftClaw - AI Agent Orchestration Suite | Enterprise AI Infrastructure</title>
+    <meta name="description" content="SwiftClaw is an enterprise-grade AI agent orchestration platform enabling seamless multi-agent coordination, autonomous task execution, and scalable AI infrastructure for businesses.">
+    <meta name="keywords" content="AI agent orchestration, multi-agent systems, enterprise AI platform, AI infrastructure, autonomous agents, AI automation, agent coordination, LLM orchestration">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SwiftClaw - AI Agent Orchestration Suite">
+    <meta property="og:description" content="Enterprise-grade AI agent orchestration platform enabling seamless multi-agent coordination and scalable AI infrastructure.">
+    <meta property="og:url" content="https://swiftclaw.ai">
+    <meta property="og:site_name" content="SwiftClaw">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SwiftClaw - AI Agent Orchestration Suite">
+    <meta name="twitter:description" content="Enterprise-grade AI agent orchestration platform enabling seamless multi-agent coordination and scalable AI infrastructure.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://swiftclaw.ai/">
+
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SwiftClaw",
+        "url": "https://swiftclaw.ai",
+        "description": "Enterprise-grade AI agent orchestration platform",
+        "foundingDate": "2025",
+        "industry": "Artificial Intelligence",
+        "knowsAbout": [
+            "AI Agent Orchestration",
+            "Multi-Agent Systems",
+            "Large Language Models",
+            "Enterprise AI Infrastructure",
+            "Autonomous AI Agents"
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SwiftClaw",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "description": "AI Agent Orchestration Suite for enterprise-scale multi-agent coordination and autonomous task execution",
+        "offers": {
+            "@type": "Offer",
+            "category": "Enterprise Software"
+        },
+        "featureList": [
+            "Multi-agent orchestration",
+            "Autonomous task execution",
+            "Real-time agent coordination",
+            "Scalable AI infrastructure",
+            "Enterprise security and compliance"
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --accent-light: #60a5fa;
+            --surface: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--text); }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 5% 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: var(--gradient); color: white; }
+        .btn-secondary { background: var(--surface); color: var(--text); border: 1px solid #334155; }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .metric h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .metric p { color: var(--text-muted); margin-top: 0.5rem; }
+
+        .features {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .feature-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        .feature-card p { color: var(--text-muted); }
+
+        .investor-section {
+            padding: 4rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .investor-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .investor-section .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: var(--surface);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .value-card h3 { margin-bottom: 0.75rem; color: var(--accent-light); }
+        .value-card p { color: var(--text-muted); }
+
+        .use-cases {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .use-cases h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .use-case {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .use-case h4 { margin-bottom: 0.5rem; }
+        .use-case p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            color: var(--text-muted);
+            border-top: 1px solid #1e293b;
+            margin-top: 4rem;
+        }
+
+        footer a { color: var(--accent-light); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.25rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SwiftClaw</div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Orchestrate AI Agents <span>at Scale</span></h1>
+        <p>SwiftClaw is the enterprise-grade orchestration platform for coordinating autonomous AI agents, enabling complex multi-agent workflows with built-in reliability and observability.</p>
+        <div class="cta-group">
+            <a href="#contact" class="btn btn-primary">Request a Demo</a>
+            <a href="investors.html" class="btn btn-secondary">Investor Information</a>
+        </div>
+    </header>
+
+    <section class="metrics" aria-label="Key metrics">
+        <div class="metric">
+            <h3>10x</h3>
+            <p>Faster agent deployment</p>
+        </div>
+        <div class="metric">
+            <h3>99.9%</h3>
+            <p>Orchestration uptime</p>
+        </div>
+        <div class="metric">
+            <h3>Sub-50ms</h3>
+            <p>Agent coordination latency</p>
+        </div>
+        <div class="metric">
+            <h3>1M+</h3>
+            <p>Agent tasks orchestrated</p>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Platform Capabilities</h2>
+        <div class="features-grid">
+            <article class="feature-card">
+                <h3>Multi-Agent Orchestration</h3>
+                <p>Coordinate dozens of specialized AI agents working in parallel with automatic task delegation, dependency resolution, and conflict management.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Autonomous Task Execution</h3>
+                <p>Define high-level objectives and let SwiftClaw decompose them into subtasks, assign agents, and manage execution end-to-end with human-in-the-loop safeguards.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Real-Time Observability</h3>
+                <p>Full visibility into agent behavior with execution traces, performance metrics, and anomaly detection across your entire agent fleet.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Enterprise Security</h3>
+                <p>SOC 2 compliant infrastructure with role-based access controls, audit logging, and sandboxed agent execution environments.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Model Agnostic</h3>
+                <p>Works with any LLM provider. Route tasks to the optimal model based on cost, latency, and capability requirements automatically.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Scalable Infrastructure</h3>
+                <p>Horizontally scalable architecture handles thousands of concurrent agent sessions with automatic load balancing and resource management.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="use-cases" id="use-cases">
+        <h2>Enterprise Use Cases</h2>
+        <div class="use-cases-grid">
+            <div class="use-case">
+                <h4>Software Development</h4>
+                <p>Orchestrate coding agents for automated code review, testing, refactoring, and deployment pipelines.</p>
+            </div>
+            <div class="use-case">
+                <h4>Data Processing</h4>
+                <p>Coordinate agents for large-scale data extraction, transformation, analysis, and report generation.</p>
+            </div>
+            <div class="use-case">
+                <h4>Customer Operations</h4>
+                <p>Deploy multi-agent systems for intelligent customer support, onboarding, and issue resolution.</p>
+            </div>
+            <div class="use-case">
+                <h4>Research & Analysis</h4>
+                <p>Enable autonomous research agents to gather, synthesize, and report on complex topics across domains.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="investor-section" id="investors">
+        <h2>Investment Opportunity</h2>
+        <p class="subtitle">SwiftClaw is positioned at the forefront of the AI agent infrastructure market, one of the fastest-growing segments in enterprise software.</p>
+        <div class="value-props">
+            <div class="value-card">
+                <h3>Market Opportunity</h3>
+                <p>The AI agent market is projected to exceed $65B by 2030. SwiftClaw captures value at the orchestration layer, the critical infrastructure enabling enterprise agent adoption.</p>
+            </div>
+            <div class="value-card">
+                <h3>Technical Moat</h3>
+                <p>Proprietary orchestration engine with patent-pending coordination algorithms that deliver superior reliability and performance at scale.</p>
+            </div>
+            <div class="value-card">
+                <h3>Go-to-Market</h3>
+                <p>Developer-first adoption model with enterprise upsell. Open-source core drives organic growth while premium features drive revenue.</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;">
+            <a href="investors.html" class="btn btn-primary">View Investor Details</a>
+        </p>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 SwiftClaw. AI Agent Orchestration Suite.</p>
+        <p style="margin-top:0.5rem;">
+            <a href="mailto:investors@swiftclaw.ai">investors@swiftclaw.ai</a> |
+            <a href="investors.html">Investor Relations</a>
+        </p>
+    </footer>
+</body>
+</html>
