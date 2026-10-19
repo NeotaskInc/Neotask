@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "domain": "NEOTASK-STANDALONE-RELEASE-POLICY-V1",
+  "issuer": "https://neotask.ai",
+  "audience": "neotask-standalone-agent-bootstrap",
+  "minimumVersion": "2026.9.1",
+  "currentVersion": "2026.10.1",
+  "maxAgeMs": 4107868000,
+  "maxFutureSkewMs": 300000,
+  "generatedAt": "2026-10-19T13:15:44.000Z",
+  "signingKeyId": "neotask-cli-release-2026-09-29",
+  "signature": "IZKDyXSMPIexkxeGst6J65eUr-7wg1Hi90qCBLYHiX2t3MofyVCdOkDncJRiuXs3fw_5rvzv1chDq3ZwH-NECg"
+}
