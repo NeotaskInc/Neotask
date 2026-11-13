@@ -5,9 +5,9 @@
   "audience": "neotask-standalone-agent-bootstrap",
   "minimumVersion": "2026.9.1",
   "currentVersion": "2026.11.2",
-  "maxAgeMs": 2821924000,
+  "maxAgeMs": 2905760000,
   "maxFutureSkewMs": 300000,
-  "generatedAt": "2026-11-12T15:24:21.000Z",
+  "generatedAt": "2026-11-13T14:41:37.000Z",
   "signingKeyId": "neotask-cli-release-2026-09-29",
-  "signature": "ToOKw1L_gbV5GHkoMjfMcvA7OTdfdwx_d86MlLZj02qejV3G0aU2xpVHlLzMaEbCt7aWf7qiJW3JM6gsIWOPCQ"
+  "signature": "L3dppDDc1oS7VrQFw2gTnwvkYeVhPRkfCRaFbX0MmVX2MvN9JF1fCMiqflCcRMSXhRa3wBpmJCEJPyWOjnt_Dw"
 }
